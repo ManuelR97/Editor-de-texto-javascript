@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!--cdn de font awasome para los iconos-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!--cdn de CSS bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="text-center center-block padding-text-icon">
+                    <p class="">Parafo</p>
+                    <a onclick="document.execCommand('justifyLeft')" href="#" data-toggle="tooltip" title="Alinear a la Izquierda"><i id="icon-align-left" class="icon-align fas fa-align-left"></i></a>
+                    <a onclick="document.execCommand('justifyCenter')" href="#" data-toggle="tooltip" title="Centrar"><i id="icon-align-center" class="icon-align fas fa-align-center"></i></a>
+                    <a onclick="document.execCommand('justifyRight')" href="#" data-toggle="tooltip" title="Alinear a la Derecha"><i id="icon-align-right" class="icon-align fas fa-align-right"></i></a>
+                    <a onclick="document.execCommand('justifyFull')"href="#" data-toggle="tooltip" title="Justificar"><i id="icon-align-justify" class="icon-align fa fa-align-justify"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="text-center center-block padding-text-icon">
+                    <p class="">Fuente</p>
+                    <a onclick="document.execCommand('bold', false, null)" href="#" data-toggle="tooltip" title="Negrita"><i id="icon-align-left" class="icon-align fas fa-bold"></i></a>
+                    <a onclick="document.execCommand('italic')" href="#" data-toggle="tooltip" title="Italic"><i id="icon-align-center" class="icon-align fas fa-italic"></i></a>
+                    <a onclick="document.execCommand('underline')" href="#" data-toggle="tooltip" title="Subrayar"><i id="icon-align-right" class="icon-align fas fa-underline"></i></a>
+                    <a onclick="document.execCommand('strikeThrough')"href="#" data-toggle="tooltip" title="Tachar"><i id="icon-align-justify" class="icon-align fas fa-strikethrough"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="text-center center-block padding-text-icon">
+                    <p class="">Fuente</p>
+                    <a onclick="document.execCommand('bold', false, null)" href="#" data-toggle="tooltip" title="Negrita"><i id="icon-align-left" class="icon-align fas fa-bold"></i></a>
+                    <a onclick="document.execCommand('italic')" href="#" data-toggle="tooltip" title="Italic"><i id="icon-align-center" class="icon-align fas fa-italic"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="text-center center-block padding-text-icon">
+                    <p class="">Listas</p>
+                    <a onclick="insertUnordered();" href="#" data-toggle="tooltip" title="Negrita"><i id="icon-align-left" class="fas fa-list-ul"></i></a>
+                    <a onclick="insertOrdered();" href="#" data-toggle="tooltip" title="Italic"><i id="icon-align-center" class="fas fa-list-ol"></i></a>
+                </div>
+            </div>
+        </div>
+
+            
+
+        <div id="editor" contenteditable="true" class="">
+            <p class="padding-text">Los artículos acompañan siempre a un sustantivo con el que concuerdan en género (masculino, femenino) y número (singular, plural). En español, existen dos tipos de artículos: los artículos indeterminados (un, una, unos, unas) y los artículos determinados (el/los, la/las, lo).
+
+                En este apartado encontrarás una explicación clara y completa acerca de los tipos de artículos que hay en español y cómo aplicarlos correctamente. En la sección de ejercicios puedes practicar lo que has aprendido y afianzar así tus conocimientos.</p>
+        </div>
+
+    </div>
+</body>
+<script src="../js/script.js"></script>
+
+<!----CDN JS de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</html>

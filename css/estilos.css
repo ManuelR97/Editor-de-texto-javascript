@@ -1,0 +1,77 @@
+/*
+   Inicio --- Formato y color de los iconos para la edicion de texto
+*/
+.icon-align{
+    padding: 10px;
+    background-color:rgb(236, 220, 220);
+    border-radius: 20px;
+}
+/*
+   Fin --- Formato y color de los iconos para la edicion de texto
+*/
+
+
+/*
+   Inicio --- Hover de los diferentes iconos del menu
+*/
+
+#icon-align-left:hover {
+    color: #3B5998;
+}
+#icon-align-center:hover {
+    color: #4099FF;
+}
+#icon-align-right:hover {
+    color: #d34836;
+}
+#icon-align-justify:hover {
+    color: #f39c12;
+}
+/*
+   Fin --- Hover de los diferentes iconos del menu
+*/
+
+
+/*
+   Inicio --- Formato del panel de editor de texto
+*/
+#editor {
+    padding: 10px;
+    height:350px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background-color: beige;
+    border-style:solid;
+}
+/*
+   fin --- Formato del panel de editor de texto
+*/
+
+
+
+
+/*
+   Inicio --- Separar los iconos del menu de el panel de texto y de el principio de la pagina
+*/
+.padding-text-icon{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*
+   fin --- Separar los iconos del menu de el panel de texto y de el principio de la pagina
+*/
+
+
+
+/*
+   Inicio --- Padding de texto a editar
+*/
+.padding-text{
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+/*
+   fin --- Padding de texto a editar
+
+
